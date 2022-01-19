@@ -1,4 +1,4 @@
-A simple voice recorder.
+# A simple voice recorder.
 
 Example on a mini sample of 3 seconds which records "yes":
 
