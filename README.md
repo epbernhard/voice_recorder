@@ -6,12 +6,14 @@ time_s = 3
 fs = 44100
 
 voice_recorder = recorder(time_s, fs)
-print("Recording...")
 voice_recorder.record()
-print("Finished recording.")
+yes = voice_recorder.sample
 
 If you want to play back what you just said use:
 voice_recorder.playback()
 
-yes = voice_recorder.sample
+To save the file, use:
 write("yes.wav", fs , yes)
+
+Libraries:
+NumPy, sounddevice, scipy, tqdm, and time.
