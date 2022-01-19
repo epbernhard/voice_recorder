@@ -10,8 +10,8 @@ print("Recording...")
 voice_recorder.record()
 print("Finished recording.")
 
-# If you want to play back what you just said
-# voice_recorder.playback()
+If you want to play back what you just said use:
+voice_recorder.playback()
 
 yes = voice_recorder.sample
 write("yes.wav", fs , yes)
