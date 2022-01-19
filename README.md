@@ -6,7 +6,9 @@ time_s = 3
 fs = 44100
 
 voice_recorder = recorder(time_s, fs)
+
 voice_recorder.record()
+
 yes = voice_recorder.sample
 
 If you want to play back what you just said use:
