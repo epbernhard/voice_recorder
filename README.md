@@ -4,7 +4,7 @@
 
 NAME = 'yes'\
 TIME_S = 3\
-F_S = 44100\
+F_S = 44100
 
 voice_recorder = Recorder(TIME_S, F_S)\
 voice_recorder.record()
