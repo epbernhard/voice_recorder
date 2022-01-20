@@ -11,7 +11,7 @@ voice_recorder.record()
 
 voice_recorder.playback()  (If you want to play back the sample)
 
-write(NAME+".wav", F_S , voice_recorder.sample)\
+write(NAME+".wav", F_S , voice_recorder.sample)
 
 ## Libraries
 NumPy, sounddevice, scipy, tqdm, and time.
