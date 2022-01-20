@@ -16,4 +16,4 @@ git clone https://github.com/epbernhard/voice_recorder.git \
 pip install voice_recorder
 
 ## Versions
-V1.0.0
+V1.0.1
