@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="voice_recorder",
-    version="1.0.0",
+    version="1.0.1",
     author="E.P.W. Bernhard",
     author_email="manu.p.bernhard@gmail.com",
     description="Just a simple voice recorder",
