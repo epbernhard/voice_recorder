@@ -2,19 +2,14 @@
 
 ## Script example for a voice sample of 3 seconds, which is saved as "sample.wav".
 
-from voice_recorder import v_rec\
-from scipy.io.wavfile import write
+from voice_recorder import v_rec
 
-NAME = 'sample'\
-TIME_S = 3\
-F_S = 44100
+length = 3 #(seconds)\
+fps = 44100 #(frames per seconds)
 
-voice_recorder = Recorder(TIME_S, F_S)\
-voice_recorder.record()
-
-voice_recorder.playback()  (If you want to play back the sample)
-
-write(NAME+".wav", F_S , voice_recorder.sample)
+voice_recorder = v_rec.Recorder(length, fps)\
+voice_recorder.record()\
+voice_recorder.save(name = 'sample')
 
 ## Install
 git clone https://github.com/epbernhard/voice_recorder.git \
