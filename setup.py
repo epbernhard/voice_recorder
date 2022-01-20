@@ -15,7 +15,6 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/epbernhard/voice_recorder",
     install_requires=['time', 'sounddevice', 'scipy', 'tqdm'],
-    packages=[],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
