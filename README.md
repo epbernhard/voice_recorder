@@ -2,7 +2,7 @@
 
 ## Example on a mini voice sample of 3 seconds, which is saved as "yes.wav" (i.e. assuming you are recording a yes).
 
-NAME = 'yes'
+NAME = 'yes'\
 TIME_S = 3
 F_S = 44100
 
