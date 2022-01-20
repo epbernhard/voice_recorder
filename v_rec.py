@@ -48,16 +48,20 @@ class Recorder():
         sounddevice.play(self.sample, self.f_s)
         sounddevice.wait()
 
+    def save(self, name = 'voice_sample', formt = 'wav'):
+        """Method for saving."""
+
+        if len(self.sample) == 0:
+            raise ValueError("Sorry, there is nothing to save.")
+
+        write(name+"."+formt, self.f_s , self.sample)
+
+
 if __name__ == "__main__":
 
-    NAME = 'yes'
     TIME_S = 3
     F_S = 44100
 
     voice_recorder = Recorder(TIME_S, F_S)
     voice_recorder.record()
-
-    # If you want to play back what you just said
-    # voice_recorder.playback()
-
-    write(NAME+".wav", F_S , voice_recorder.sample)
+    voice_recorder.save(name = 'test')
