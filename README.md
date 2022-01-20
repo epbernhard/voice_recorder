@@ -2,7 +2,7 @@
 
 ## Script example for a voice sample of 3 seconds, which is saved as "sample.wav".
 
-from voice_recorder import v_rec
+from voice_recorder import v_rec\
 from scipy.io.wavfile import write
 
 NAME = 'sample'\
