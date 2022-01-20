@@ -1,21 +1,20 @@
 # A simple voice recorder.
 
-Example on a mini sample of 3 seconds which records "yes":
+## Example on a mini voice sample of 3 seconds, which is saved as "yes.wav" (i.e. assuming you are recording a yes).
 
-time_s = 3
-fs = 44100
+NAME = 'yes'
+TIME_S = 3
+F_S = 44100
 
-voice_recorder = recorder(time_s, fs)
-
+voice_recorder = Recorder(TIME_S, F_S)
 voice_recorder.record()
 
-yes = voice_recorder.sample
+voice_recorder.playback()  (If you want to play back the sample)
 
-If you want to play back what you just said use:
-voice_recorder.playback()
+write(NAME+".wav", F_S , voice_recorder.sample)
 
-To save the file, use:
-write("yes.wav", fs , yes)
-
-Libraries:
+## Libraries
 NumPy, sounddevice, scipy, tqdm, and time.
+
+## Versions
+V1.0.0
