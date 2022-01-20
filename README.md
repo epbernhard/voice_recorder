@@ -7,7 +7,7 @@ TIME_S = 3\
 F_S = 44100\
 
 voice_recorder = Recorder(TIME_S, F_S)\
-voice_recorder.record()\
+voice_recorder.record()
 
 voice_recorder.playback()  (If you want to play back the sample)
 
